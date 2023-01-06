@@ -8,8 +8,10 @@ function App() {
 	return (
 		<div className="App">
 			<Header title="React Title" />
-			<Nav />
-			<Main />
+			<div className="mainFlex">
+				<Nav />
+				<Main />
+			</div>
 			<Footer />
 		</div>
 	);
