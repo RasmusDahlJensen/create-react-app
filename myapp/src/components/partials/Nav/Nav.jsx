@@ -13,7 +13,7 @@ export const Nav = () => {
 				{navArr.map((nav, key) => {
 					return (
 						<li key={key}>
-							<a href={"#" + nav}>{nav}</a>
+							<a href={"/" + nav.replace(/\s+/g, "")}>{nav}</a>
 						</li>
 					);
 				})}
