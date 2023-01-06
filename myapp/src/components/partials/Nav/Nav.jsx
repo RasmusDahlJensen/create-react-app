@@ -12,10 +12,8 @@ export const Nav = () => {
 			<ul>
 				{navArr.map((nav, key) => {
 					return (
-						<li>
-							<a key={key} href={"/" + nav}>
-								{nav}
-							</a>
+						<li key={key}>
+							<a href={"#" + nav}>{nav}</a>
 						</li>
 					);
 				})}
